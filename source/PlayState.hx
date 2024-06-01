@@ -4916,105 +4916,25 @@ class PlayState extends MusicBeatState
 				betacsCheck();
 
 		}
-	function betacsCheck() //probably not good for performace lol
+	function betacsCheck() //probably good for performace lol
 	{
-		if (!isbf)
-			boyfriend.visible = false;
-		else if (isbf)
-			boyfriend.visible = true;
-
-		if (!iswhitty)
-			whitty.visible = false;
-		else if (iswhitty)
-			whitty.visible = true;
-
-		if (!istricky)
-			dad.visible = false;
-		else if (istricky)
-			dad.visible = true;
-
-		if (!istabi)
-			tabi.visible = false;
-		else if (istabi)
-			tabi.visible = true;
-
-		if (!isagoti)
-			agoti.visible = false;
-		else if (isagoti)
-			agoti.visible = true;
-
-		if (!issky)
-			cass.visible = false;
-		else if (issky)
-			cass.visible = true;
-
-		if (!istordbot)
-			tordbot.visible = false;
-		else if (istordbot)
-			tordbot.visible = true;
-
-		if (!iszardy)
-			zardy.visible = false;
-		else if (iszardy)
-			zardy.visible = true;
-
-		if (!isbob)
-			bob.visible = false;
-		else if (isbob)
-			bob.visible = true;
-
-		if (!issenpai)
-		{
-			senpai.visible = false;
-			senpaiT.visible = false;
-		}
-		else if (issenpai)
-		{
-			senpai.visible = true;
-			senpaiT.visible = true;
-		}
-		if (!ismatt)
-			matt.visible = false;
-		else if (ismatt)
-			matt.visible = true;
-
-		if (!ispico)
-			pico.visible = false;
-		else if (ispico)
-			pico.visible = true;
-
-		if (!ishankchar)
-			hankchar.visible = false;
-		else if (ishankchar)
-			hankchar.visible = true;
-
-		if (!isgarcello)
-			garcello.visible = false;
-		else if (isgarcello)
-			garcello.visible = true;
-
-		if (!isshaggy)
-		{
-			shaggy.visible = false;
-			shaggyT.visible = false;
-		}
-		else if (isshaggy)
-		{
-			shaggy.visible = true;
-			shaggyT.visible = true;
-		}
-			
-
-		if (!isruv)
-			ruv.visible = false;
-		else if (isruv)
-			ruv.visible = true;
-
-		if (!ishex)
-			hex.visible = false;
-		else if (ishex)
-			hex.visible = true;
-
+		boyfriend.visible = isbf;
+		whitty.visible = iswhitty;
+		dad.visible = istricky;
+		tabi.visible = istabi;
+		agoti.visible = isagoti;
+		cass.visible = issky;
+		tordbot.visible = istordbot;
+		zardy.visible = iszardy;
+		bob.visible = isbob;
+		senpai.visible = senpaiT.visible = issenpai;
+		matt.visible = ismatt;
+		pico.visible = ispico;
+		hankchar.visible = ishankchar;
+		garcello.visible = isgarcello;
+		shaggy.visible = shaggyT.visible = isshaggy;
+		ruv.visible = isruv;
+		hex.visible = ishex;
 	}
 
 	function killplayer() //this is so that dumbass gremlin at the end doesnt ignore when you hit halo notes (its just the death code copied)
