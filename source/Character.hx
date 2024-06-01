@@ -755,6 +755,7 @@ class Character extends FlxSprite
 
 				playAnim('idle');
 		}
+		frames.parent.canBeDumped = false;
 
 		if (FlxG.save.data.aa)
 			antialiasing = true;
@@ -1023,4 +1024,9 @@ class Character extends FlxSprite
 		{
 			animOffsets[name] = [x, y];
 		}
+
+	public override function destroy() {
+		frames.parent.canBeDumped = true;
+		super.destroy();
+	}
 }
