@@ -755,7 +755,7 @@ class Character extends FlxSprite
 
 				playAnim('idle');
 		}
-		frames.parent.canBeDumped = false;
+		frames.parent.persist = true;
 
 		if (FlxG.save.data.aa)
 			antialiasing = true;
@@ -1026,7 +1026,7 @@ class Character extends FlxSprite
 		}
 
 	public override function destroy() {
-		frames.parent.canBeDumped = true;
+		frames.parent.persist = false;
 		super.destroy();
 	}
 }
