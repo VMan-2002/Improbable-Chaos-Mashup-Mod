@@ -37,7 +37,7 @@ class CreditsMenu extends MusicBeatState
 			new JADSCredit("the credit"),
 			new MoroCredit("the credit")
 		]),	
-		new CreditCatagory("Whitty Mod Authors (RIP)", [
+		new CreditCatagory("Whitty Mod Authors", [
 			new SockClipCredit("the credit"),
 			new KadeCredit("the credit"),
 			new NateAnimCredit("the credit"),
